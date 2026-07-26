@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SMC by Jon FX | Smart Money Concepts</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #050b14;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #081321;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid #1b3148;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #00d4ff;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #00d4ff;
+    }
+
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #06101d, #0b1d32);
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #00d4ff;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      color: #b8c7d9;
+      font-size: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 14px 28px;
+      background: #00d4ff;
+      color: #001018;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: #00aacc;
+    }
+
+    section {
+      padding: 70px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 40px;
+      color: #00d4ff;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #0b1828;
+      padding: 30px;
+      border-radius: 12px;
+      border: 1px solid #1d354d;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      border-color: #00d4ff;
+    }
+
+    .card h3 {
+      color: #00d4ff;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      color: #b8c7d9;
+    }
+
+    .challenge {
+      text-align: center;
+      background: linear-gradient(135deg, #0c2035, #06101d);
+      border-top: 1px solid #1d354d;
+      border-bottom: 1px solid #1d354d;
+    }
+
+    .price {
+      font-size: 38px;
+      font-weight: bold;
+      color: #00d4ff;
+      margin: 20px 0;
+    }
+
+    .mpesa {
+      background: #0a281c;
+      border: 1px solid #19c37d;
+    }
+
+    .mpesa h3 {
+      color: #19c37d;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #03070d;
+      color: #8293a7;
+      border-top: 1px solid #1b3148;
+    }
+
+    @media (max-width: 700px) {
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">SMC BY JON FX</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#courses">Courses</a>
+      <a href="#challenge">Challenge</a>
+      <a href="#payment">Payment</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div>
+      <h1>Master the Markets with <span>SMC by Jon FX</span></h1>
+
+      <p>
+        Learn Smart Money Concepts, market structure, liquidity,
+        order blocks and professional trading discipline.
+      </p>
+
+      <a href="#challenge" class="btn">Start Learning</a>
+    </div>
+  </section>
+
+  <section id="courses">
+    <h2 class="section-title">What You Will Learn</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Market Structure</h3>
+        <p>
+          Learn HH, HL, LH, LL, BOS and CHoCH to understand market direction.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Liquidity</h3>
+        <p>
+          Understand where smart money hunts liquidity and how to identify liquidity zones.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Order Blocks</h3>
+        <p>
+          Learn how to identify high-probability institutional order blocks.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Fair Value Gaps</h3>
+        <p>
+          Understand imbalances and how price returns to fill them.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="challenge" id="challenge">
+
+    <h2 class="section-title">Jon's Trading Challenge</h2>
+
+    <p>
+      Turn your trading dreams into disciplined execution.
+    </p>
+
+    <div class="price">KSh 500</div>
+
+    <p>
+      Join the SMC by Jon FX Trading Challenge today.
+    </p>
+
+    <a href="#payment" class="btn">Join Now</a>
+
+  </section>
+
+  <section id="payment">
+
+    <h2 class="section-title">Make Payment</h2>
+
+    <div class="cards">
+
+      <div class="card mpesa">
+
+        <h3>M-Pesa Payment</h3>
+
+        <p>
+          Pay KSh 500 via M-Pesa to join the SMC by Jon FX Trading Challenge.
+        </p>
+
+        <p style="margin-top:15px; font-size:20px;">
+          <strong>Send KSh 500 to:</strong>
+        </p>
+
+        <p style="font-size:25px; color:#19c37d; margin-top:10px;">
+          0708424984
+        </p>
+
+        <p style="margin-top:15px;">
+          After payment, send your M-Pesa transaction message through WhatsApp
+          for confirmation.
+        </p>
+
+        <a
+          href="https://wa.me/254708424984?text=Hello%20Jon%20FX%2C%20I%20have%20paid%20KSh%20500%20for%20the%20SMC%20Trading%20Challenge.%20Here%20is%20my%20M-Pesa%20transaction%20message%3A"
+          class="btn">
+          Send Payment Confirmation
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="contact" id="contact">
+
+    <h2 class="section-title">Contact Jon FX</h2>
+
+    <p>
+      For registration, payment confirmation and trading education.
+    </p>
+
+    <a
+      href="https://wa.me/254708424984"
+      class="btn">
+      Chat on WhatsApp
+    </a>
+
+  </section>
+
+  <footer>
+
+    <p>© 2026 SMC by Jon FX. All Rights Reserved.</p>
+
+    <p>Smart Money Concepts | Trading Education</p>
+
+  </footer>
+
+</body>
+  </html>
