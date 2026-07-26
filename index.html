@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMC by Jon FX | Smart Money Concepts</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #071412;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 7%;
+      border-bottom: 1px solid #18332e;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #00d084;
+    }
+
+    nav a {
+      color: #b9c9c5;
+      text-decoration: none;
+      margin-left: 25px;
+    }
+
+    .btn {
+      background: #00d084;
+      color: #00110b;
+      padding: 14px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 7% 80px;
+      background: radial-gradient(circle at top, #12352d, #071412 60%);
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 8vw, 80px);
+      line-height: 1.05;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 span {
+      color: #00d084;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      color: #a9bbb6;
+      font-size: 20px;
+      margin-bottom: 35px;
+    }
+
+    .section {
+      padding: 70px 7%;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    .section > p {
+      color: #9caeaa;
+      margin-bottom: 40px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .card {
+      background: #10231f;
+      border: 1px solid #1c4037;
+      padding: 28px;
+      border-radius: 12px;
+      text-align: left;
+    }
+
+    .card h3 {
+      color: #00d084;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #a9bbb6;
+    }
+
+    .pricing {
+      background: #0b1c18;
+    }
+
+    .price-card {
+      max-width: 400px;
+      margin: auto;
+      background: #10231f;
+      border: 2px solid #00d084;
+      padding: 35px;
+      border-radius: 14px;
+    }
+
+    .price {
+      font-size: 42px;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+
+    .price-card ul {
+      list-style: none;
+      text-align: left;
+      margin: 25px 0;
+    }
+
+    .price-card li {
+      margin: 12px 0;
+      color: #c4d1ce;
+    }
+
+    .price-card li::before {
+      content: "✓ ";
+      color: #00d084;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #82938f;
+      border-top: 1px solid #18332e;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 18px;
+      }
+
+      nav a {
+        display: none;
+      }
+
+      .hero {
+        padding: 70px 20px;
+      }
+
+      .section {
+        padding: 55px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">SMC <span>by Jon FX</span></div>
+
+    <nav>
+      <a href="#learn">Learn</a>
+      <a href="#tools">Tools</a>
+      <a href="#pricing">Premium</a>
+      <a href="#login">Login</a>
+    </nav>
+
+    <a href="#pricing" class="btn">Join Premium</a>
+  </header>
+
+  <section class="hero">
+    <h1>Trade With<br><span>Smart Money Concepts</span></h1>
+
+    <p>
+      Learn market structure, liquidity, order blocks and price action.
+      Build discipline and trade with a professional plan.
+    </p>
+
+    <a href="#learn" class="btn">Start Learning →</a>
+  </section>
+
+  <section class="section" id="learn">
+    <h2>Learn SMC Trading</h2>
+    <p>Build your knowledge from the foundation to advanced market analysis.</p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Market Structure</h3>
+        <p>Understand higher highs, higher lows, lower highs, lower lows, BOS and CHoCH.</p>
+      </div>
+
+      <div class="card">
+        <h3>Liquidity</h3>
+        <p>Learn how liquidity works and how traders identify important liquidity zones.</p>
+      </div>
+
+      <div class="card">
+        <h3>Order Blocks</h3>
+        <p>Study institutional order blocks and how they can be used in your analysis.</p>
+      </div>
+
+      <div class="card">
+        <h3>Fair Value Gaps</h3>
+        <p>Understand imbalance and how price may react to important FVG zones.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="tools">
+    <h2>Trading Tools</h2>
+    <p>Tools designed to help you become more organized and disciplined.</p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>AI Trading Assistant</h3>
+        <p>Ask questions about trading concepts and receive educational guidance.</p>
+      </div>
+
+      <div class="card">
+        <h3>Trading Journal</h3>
+        <p>Record your trades, mistakes, emotions and lessons learned.</p>
+      </div>
+
+      <div class="card">
+        <h3>Trading Plan</h3>
+        <p>Create a structured plan before entering the market.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section pricing" id="pricing">
+    <h2>Premium Membership</h2>
+    <p>Unlock the full SMC by Jon FX learning experience.</p>
+
+    <div class="price-card">
+      <h3>SMC Premium</h3>
+
+      <div class="price">KSh 999 <small>/ month</small></div>
+
+      <ul>
+        <li>Full SMC trading course</li>
+        <li>Premium trading tools</li>
+        <li>Trading journal</li>
+        <li>AI education assistant</li>
+        <li>Premium community access</li>
+      </ul>
+
+      <a href="#" class="btn">Pay With M-Pesa</a>
+    </div>
+  </section>
+
+  <section class="section" id="login">
+    <h2>Build Your Trading Future</h2>
+    <p>
+      This platform is being built to help traders learn, plan and improve
+      their trading discipline.
+    </p>
+
+    <a href="#pricing" class="btn">Become a Member</a>
+  </section>
+
+  <footer>
+    © 2026 SMC by Jon FX. Education and tools for traders.
+  </footer>
+
+</body>
+    </html>
